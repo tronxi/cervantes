@@ -13,7 +13,7 @@ OPT_EMULATE=no
 OPT_CLEAN=no
 PROJECT=none
 RESOLUTION=none
-PREFIX=/opt
+PREFIX=/home/tronxi/workspace/bqeReaderSDK-5.0.2
 PRIVATE=../qbookapp-private
 OPT_CPPOPTO0=no
 DEBUG_OPTS=yes
@@ -45,8 +45,8 @@ do
 done
 
 # generate hg version strings
-HG_REV=`hg id | cut -c1-6`
-HG_BRANCH=`hg branch`
+HG_REV=`git rev-parse HEAD | cut -c1-6`
+HG_BRANCH=`git branch`
 BUILD_DATE=`eval date +%Y%m%d_%H%M`
 export PRIVATE=$PRIVATE
 # set environment
